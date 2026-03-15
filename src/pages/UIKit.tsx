@@ -7,10 +7,10 @@ import { Checkbox } from '../components/Checkbox';
 import { Radio } from '../components/Radio';
 import { Textarea } from '../components/Textarea';
 import { DatePicker } from '../components/DatePicker';
+import { Switch } from '../components/Switch';
 
 /**
  * Страница UI Kit для демонстрации всех разработанных компонентов.
- * Позволяет визуально оценить компоненты в различных состояниях.
  */
 export const UIKit: React.FC = () => {
   return (
@@ -25,6 +25,19 @@ export const UIKit: React.FC = () => {
       </header>
 
       <div className="space-y-16">
+        {/* Секция переключателей */}
+        <section>
+          <h2 className="text-xl font-semibold text-zinc-200 mb-6 flex items-center gap-2">
+            <span className="w-1.5 h-6 bg-emerald-500 rounded-full" />
+            Переключатели (Switches)
+          </h2>
+          <div className="flex flex-wrap gap-8">
+            <Switch label="Уведомления" defaultChecked />
+            <Switch label="Темная тема" />
+            <Switch label="Заблокировано" disabled />
+          </div>
+        </section>
+
         {/* Секция кнопок */}
         <section>
           <h2 className="text-xl font-semibold text-zinc-200 mb-6 flex items-center gap-2">
