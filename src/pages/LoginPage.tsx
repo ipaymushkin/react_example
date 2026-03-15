@@ -66,7 +66,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
         className="w-full max-w-md bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl backdrop-blur-xl shadow-2xl"
       >
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-white mb-2">Добро пожаловать</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">Добро пожаловать в наш сервис</h1>
           <p className="text-zinc-400">Пожалуйста, заполните данные для входа</p>
         </div>
 
